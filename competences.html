@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Bienvenue sur la page compétences du CV de Nicolas Henault, développeur web junior!" />
+    <meta name="keywords" content="développeur web, CV, Nicolas Henault, compétences" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/commonstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scriptjquery.js"></script>
+    <title>Compétences</title>
+</head>
+
+<body>
+    <header>
+        <div id="banniere">
+          <div id="logo">
+                <h3>Nicolas Henault</h3>
+                <h4><span>D</span>éveloppeur <span>W</span>eb <span>J</span>unior</h4>
+            </div>
+        </div>
+        <nav id="nav_mobile">
+            <input type="checkbox" id="hamburger1" />
+            <label for="hamburger1"></label>
+            <ul class="nav-links">
+                <li><a href="a_propos.html">A propos</a></li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>            
+        </nav>
+        <nav id="nav_normale">
+            <ul>
+                <li><a href="a_propos.html" class="police_nav">A propos</a></li>                
+                <li><a href="competences.html" class="active" class="police_nav">Compétences</a></li>
+                <li><a href="experiences.html" class="police_nav">Expériences</a></li>
+                <li><a href="formation.html" class="police_nav">Formation</a></li>
+                <li><a href="loisirs.html" class="police_nav" >Loisirs</a></li>
+                <li><a href="contact.html" class="police_nav">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Compétences</h1>
+    <main id="skills">        
+       <section>
+           <h2>Développement</h2>
+           <div>
+               <div><img src="img/html5.png">HTML5</div>
+               <div class="barre_fond"><div class="barre_prog" id="html" data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/css3.png">CSS3</div>
+               <div class="barre_fond"><div class="barre_prog" id="css" data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/js.png">Javascript</div>
+               <div class="barre_fond"><div class="barre_prog" id="js" data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/php.png">PHP</div>
+               <div class="barre_fond"><div class="barre_prog" id=php data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/mysql.png">MySQL</div>
+               <div class="barre_fond"><div class="barre_prog" id=mysql data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/wordpress.png">Wordpress</div>
+               <div class="barre_fond"><div class="barre_prog" id="wordpress" data-emergence="hidden"></div></div>
+           </div> 
+        </section>      
+        <section>
+           <h2>Langues étrangères</h2>
+           <div>
+               <div><img src="img/anglais.png">Anglais</div>
+               <div class="barre_fond"><div class="barre_prog" id="anglais" data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/mandarin.png">Mandarin</div>
+               <div class="barre_fond"><div class="barre_prog" id="mandarin" data-emergence="hidden"></div></div>
+           </div>
+           <div>
+               <div><img src="img/espagnol.png">Espagnol</div>
+               <div class="barre_fond"><div class="barre_prog" id="espagnol" data-emergence="hidden"></div></div>
+           </div>
+       </section>  
+    </main>
+    <footer>
+        <a href="cv_nicolashenault.pdf"><img src="img/pdf1.png">Télécharger le CV au format pdf</a>
+    </footer>
+    <script src="js/emergence.js-master/dist/emergence.min.js"></script>
+</body>
+
+</html>

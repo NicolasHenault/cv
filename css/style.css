@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+html,body
+{
+	width: 100%;
+	min-height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+body
+{
+	background-image: url('../img/aurore.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*La navigation*/
+
+#nav_normale ul li
+{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+#nav_normale {
+	width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px white solid;
+    border-radius: 8px; 
+    padding-left: 5px; 
+    text-align: center; 
+    margin: auto;
+    margin-top: 10px;
+}
+#nav_mobile {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.police_nav {
+	color: white;
+	line-height: 50px;
+	font-size: 1.2em;
+}
+#nav_mobile_content a {
+	display: block;
+	text-decoration: none;
+	background-color: black;
+    opacity: 0.8;
+	padding: 10px;	
+}
+
+#nav_mobile:target #nav_mobile_burger {
+	display: none;	
+}
+#nav_mobile:not(target) #nav_mobile_burger {
+	display: block;
+}
+#nav_mobile:not(target) #nav_mobile_content {
+	display: none;
+}
+#nav_mobile:target #nav_mobile_content {
+	display: block;
+}
+
+.police_nav:hover
+{
+    color: #00A208;
+    text-decoration: underline;
+}
+#nav_normale
+{
+   display: none;
+}
+
+#nav_mobile {
+   display: block;
+}
+main
+{
+    text-align: center;
+    border: 4px white solid;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+h1
+{
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+h2
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+h2 span
+{
+    color: #00A208;
+}
+
+footer
+{
+    background-color: rgba(128, 128, 128, 0.8);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: white;
+    font-size: 1em;   
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+img
+{
+    max-height: 80px;
+    vertical-align: middle;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen and (min-width: 35.5em)
+{
+
+    #nav_normale
+	{
+		display: block;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+	}
+	#nav_mobile
+	{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 48em)
+{    
+    #nav_normale ul
+    {
+        display: flex;  
+        justify-content: space-around;
+    }
+    main
+    {
+        width: 80%;
+    }
+    h1
+    {    
+        font-size: 6em; 
+    }
+    h2
+    {    
+        font-size: 3em;   
+    }
+    footer
+    {    
+        font-size: 1em;      
+    } 
+}
+@media only screen and (min-width: 64em)
+{        
+    a
+    {
+        font-size: 2em;    
+    }
+    main
+    {
+        margin-top: 100px;
+        width: 50%
+    }    
+}
